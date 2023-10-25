@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Components</title>
+    <!-- ===CSS === -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ===Fontawesome === -->
+    <script src="https://kit.fontawesome.com/bd2030fcee.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="card-container">
+        <div class="card">
+            <h1>Card Componnet</h1>
+            <p>Please provide your name, email, and feedback message:</p>
+            <form action="submit_feedback.php" method="post">
+                <label for="name"><i class="fa-solid fa-signature"></i>:</label> <br>
+                <input type="text" id="name" name="name" pattern="Name" placeholder="Name" required> <br>
+                <label for="email"><i class="fa-solid fa-envelope"></i></label> <br>
+                <input type="email" id="email" name="email" placeholder="Email" required> <br>
+                <label for="message"><i class="fa-solid fa-message"></i>:</label> <br>
+                <textarea id="message" name="message" cols="16" placeholder="Feedback Message" required></textarea> <br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <ul class="list">
+                <li>Please fill in all the required fields</li>
+                <li>Your feedback is important to us so please do not hesitate to give your feedback </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
